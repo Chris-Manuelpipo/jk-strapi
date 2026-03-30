@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "project"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Cybersécurité",
+        "Vidéosurveillance",
+        "IoT",
+        "Audit",
+        "Formation",
+        "Réseau",
+        "Autre"
+      ]
+    },
+    "client": {
+      "type": "string"
+    },
+    "progress": {
+      "type": "integer"
+    },
+    "statuses": {
+      "type": "enumeration",
+      "enum": [
+        "En cours",
+        "Terminé",
+        "En pause",
+        "Planifié"
+      ]
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "image_file": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "start_date": {
+      "type": "string"
+    },
+    "end_date": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

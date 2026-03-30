@@ -1,28 +1,32 @@
 {
   "kind": "collectionType",
-  "collectionName": "abouts",
+  "collectionName": "testimonials",
   "info": {
-    "singularName": "about",
-    "pluralName": "abouts",
-    "displayName": "about"
+    "singularName": "testimonial",
+    "pluralName": "testimonials",
+    "displayName": "testimonial"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "role": {
       "type": "string"
     },
     "text": {
       "type": "text"
     },
-    "image_url": {
-      "type": "text"
+    "avatar_url": {
+      "type": "string"
     },
-    "image_file": {
+    "avatar_file": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "allowedTypes": [
         "images",
         "files",
@@ -30,16 +34,10 @@
         "audios"
       ]
     },
-    "stat_clients": {
+    "rating": {
       "type": "integer"
     },
-    "stat_projects": {
-      "type": "integer"
-    },
-    "stat_years": {
-      "type": "integer"
-    },
-    "stat_experts": {
+    "order": {
       "type": "integer"
     }
   }

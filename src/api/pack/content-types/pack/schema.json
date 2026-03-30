@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "packs",
+  "info": {
+    "singularName": "pack",
+    "pluralName": "packs",
+    "displayName": "pack"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "badge": {
+      "type": "string"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "items": {
+      "type": "json"
+    },
+    "original_price": {
+      "type": "integer"
+    },
+    "promo_price": {
+      "type": "integer"
+    },
+    "currency": {
+      "type": "string",
+      "default": "FCFA"
+    },
+    "expires_at": {
+      "type": "date"
+    },
+    "cta": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}
