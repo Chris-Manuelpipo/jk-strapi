@@ -17,7 +17,7 @@
     "role": {
       "type": "string"
     },
-    "image": {
+    "image_file": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
@@ -38,6 +38,9 @@
     },
     "order": {
       "type": "integer"
+    },
+    "image_url": {
+      "type": "string"
     }
   }
 }
