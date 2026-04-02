@@ -482,8 +482,7 @@ export interface ApiAboutAbout extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     image_file: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
+      'images' | 'files' | 'videos' | 'audios'
     >;
     image_url: Schema.Attribute.Text;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -606,7 +605,7 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiContactInfoContactInfo extends Struct.CollectionTypeSchema {
+export interface ApiContactInfoContactInfo extends Struct.SingleTypeSchema {
   collectionName: 'contact_infos';
   info: {
     displayName: 'contact-info';
@@ -660,8 +659,7 @@ export interface ApiFormationFormation extends Struct.CollectionTypeSchema {
     description: Schema.Attribute.Text;
     duration: Schema.Attribute.String;
     image_file: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
+      'images' | 'files' | 'videos' | 'audios'
     >;
     image_url: Schema.Attribute.String;
     level: Schema.Attribute.Enumeration<
@@ -735,8 +733,7 @@ export interface ApiHeroSlideHeroSlide extends Struct.CollectionTypeSchema {
     cta2_link: Schema.Attribute.String;
     cta2_text: Schema.Attribute.String;
     image_file: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
+      'images' | 'files' | 'videos' | 'audios'
     >;
     image_url: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -748,7 +745,7 @@ export interface ApiHeroSlideHeroSlide extends Struct.CollectionTypeSchema {
     order: Schema.Attribute.Integer;
     publishedAt: Schema.Attribute.DateTime;
     subtitle: Schema.Attribute.Text;
-    title: Schema.Attribute.Text & Schema.Attribute.Required;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -833,7 +830,7 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     progress: Schema.Attribute.Integer;
     publishedAt: Schema.Attribute.DateTime;
     start_date: Schema.Attribute.String;
-    statuses: Schema.Attribute.Enumeration<
+    statuse: Schema.Attribute.Enumeration<
       ['En cours', 'Termin\u00E9', 'En pause', 'Planifi\u00E9']
     >;
     title: Schema.Attribute.String & Schema.Attribute.Required;
@@ -875,7 +872,7 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiSiteConfigSiteConfig extends Struct.CollectionTypeSchema {
+export interface ApiSiteConfigSiteConfig extends Struct.SingleTypeSchema {
   collectionName: 'site_configs';
   info: {
     displayName: 'site-config';
@@ -897,6 +894,7 @@ export interface ApiSiteConfigSiteConfig extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     logo_file: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    logo_url: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     slogan: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
@@ -929,6 +927,7 @@ export interface ApiTeamMemberTeamMember extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     name: Schema.Attribute.String;
+    order: Schema.Attribute.Integer;
     publishedAt: Schema.Attribute.DateTime;
     role: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;

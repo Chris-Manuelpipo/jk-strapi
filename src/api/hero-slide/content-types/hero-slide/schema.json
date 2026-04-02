@@ -12,7 +12,7 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "text",
+      "type": "string",
       "required": true
     },
     "subtitle": {
@@ -23,7 +23,7 @@
     },
     "image_file": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "allowedTypes": [
         "images",
         "files",

@@ -40,7 +40,7 @@
     },
     "image_file": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "allowedTypes": [
         "images",
         "files",

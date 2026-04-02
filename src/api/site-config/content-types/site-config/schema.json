@@ -1,5 +1,5 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "site_configs",
   "info": {
     "singularName": "site-config",
@@ -26,6 +26,9 @@
         "videos",
         "audios"
       ]
+    },
+    "logo_url": {
+      "type": "string"
     }
   }
 }
