@@ -50,6 +50,24 @@
     },
     "order": {
       "type": "integer"
+    },
+    "nextSession": {
+      "type": "string"
+    },
+    "maxParticipantsnouveau": {
+      "type": "integer"
+    },
+    "objectives": {
+      "type": "json"
+    },
+    "program": {
+      "type": "json"
+    },
+    "prerequisites": {
+      "type": "json"
+    },
+    "instructor": {
+      "type": "json"
     }
   }
 }
