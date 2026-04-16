@@ -27,6 +27,27 @@
     "active": {
       "type": "boolean",
       "default": true
+    },
+    "longDescription": {
+      "type": "blocks"
+    },
+    "features": {
+      "type": "json"
+    },
+    "benefits": {
+      "type": "json"
+    },
+    "process": {
+      "type": "json"
+    },
+    "stats": {
+      "type": "json"
+    },
+    "tags": {
+      "type": "json"
+    },
+    "highlights": {
+      "type": "json"
     }
   }
 }
