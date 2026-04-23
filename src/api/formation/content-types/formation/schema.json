@@ -54,7 +54,7 @@
     "nextSession": {
       "type": "string"
     },
-    "maxParticipantsnouveau": {
+    "maxParticipants": {
       "type": "integer"
     },
     "objectives": {

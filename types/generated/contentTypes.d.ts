@@ -635,7 +635,7 @@ export interface ApiFormationFormation extends Struct.CollectionTypeSchema {
       'api::formation.formation'
     > &
       Schema.Attribute.Private;
-    maxParticipantsnouveau: Schema.Attribute.Integer;
+    maxParticipants: Schema.Attribute.Integer;
     nextSession: Schema.Attribute.String;
     objectives: Schema.Attribute.JSON;
     order: Schema.Attribute.Integer;
